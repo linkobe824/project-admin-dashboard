@@ -1,0 +1,62 @@
+      <a href="">
+        <i class="fa-solid fa-table-columns"></i>
+        Dashboard
+      </a>
+    </div>
+    <ul class="options list">
+      <li>
+        <a href="">
+          <i class="fa-solid fa-house"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-regular fa-address-card"></i>
+          Profile
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-message"></i>
+          Messages
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-clock"></i>
+          History
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-mug-hot"></i>
+          Tasks
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-users"></i>
+          Communities
+        </a>
+      </li>
+    </ul>
+    <ul class="configurations list">
+      <li>
+        <a href="">
+          <i class="fa-solid fa-gear"></i>
+          Settings
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-circle-question"></i>
+          Support
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-shield"></i>
+          Privacy
+        </a>
+      </li>

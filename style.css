@@ -1,0 +1,49 @@
+:root {
+  --blue: #3b82f6;
+  --grey: #e2e8f0;
+  --orange: #facc15;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: grey;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas: 
+                "sidebar header"
+                "sidebar main"
+                "sidebar main"
+                "sidebar main"
+                "sidebar main";
+}
+
+.header {
+  grid-area: header;
+  background-color: var(--grey);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--blue);
+}
+
+.main {
+  grid-area: main;
+  background-color: var(--orange);
+}
