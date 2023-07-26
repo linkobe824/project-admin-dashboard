@@ -1,5 +1,5 @@
 :root {
-  --blue: #3b82f6;
+  --blue: #0284c7;
   --grey: #e2e8f0;
   --orange: #facc15;
 }
@@ -35,15 +35,51 @@ a {
 
 .header {
   grid-area: header;
-  background-color: var(--grey);
+  background-color: white;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .sidebar {
   grid-area: sidebar;
   background-color: var(--blue);
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 4rem;
 }
+
+.sidebar .logo {
+  padding: 1.5rem 0 0 1rem;
+  font-size: 2em;
+}
+
+.sidebar .logo i {
+  font-size: 2rem;
+}
+
+.sidebar .logo a{
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .list li{
+  padding: 0 0 1.5rem 1.5rem;
+}
+.sidebar a{
+  color: white;
+}
+
+.sidebar a:hover {
+  color: greenyellow;
+}
+
+.sidebar a i {
+  margin-right: 1rem;
+}
+
 
 .main {
   grid-area: main;
-  background-color: var(--orange);
+  background-color: var(--grey);
 }
