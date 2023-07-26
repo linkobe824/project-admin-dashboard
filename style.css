@@ -30,6 +30,8 @@ a {
                 "sidebar main"
                 "sidebar main"
                 "sidebar main"
+                "sidebar main"
+                "sidebar main"
                 "sidebar main";
 }
 
@@ -37,8 +39,101 @@ a {
   grid-area: header;
   background-color: white;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+.header .search {
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 1rem;
+}
+
+.header .search i {
+  margin-right: 1rem;
+}
+
+.header .search .search-input{
+  flex: 1;
+  height: 1.6rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--grey);
+}
+
+.header .profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 0 5rem;
+}
+
+.header .profile p {
+  font-weight: 700;
+}
+
+.header .profile i{
+  font-size: 1.5rem;
+}
+
+.header .profile img{
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--orange);
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.header .greetings {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 3rem 1rem 3rem;
+}
+
+.header .greetings img {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: var(--orange);
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.header .greetings .side p:first-child {
+  font-size: .85rem;
+  font-weight: 500;
+}
+.header .greetings .side p:last-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header .actions {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-right: 3rem;
+}
+
+.header .actions ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .actions a {
+  font-size: .9rem;
+  background: var(--blue);
+  color: white;
+  font-weight: 700;
+  padding: .7rem 2rem;
+  border-radius: 20px;
+}
+
+.header .actions a:hover {
+  background-color: #075981;
 }
 
 .sidebar {
@@ -50,7 +145,7 @@ a {
 }
 
 .sidebar .logo {
-  padding: 1.5rem 0 0 1rem;
+  padding: 1rem 0 0 1rem;
   font-size: 2em;
 }
 
@@ -61,6 +156,7 @@ a {
 .sidebar .logo a{
   display: flex;
   align-items: center;
+  font-weight: 500;
 }
 
 .sidebar .list li{
@@ -68,10 +164,11 @@ a {
 }
 .sidebar a{
   color: white;
+  font-weight: bold;
 }
 
 .sidebar a:hover {
-  color: greenyellow;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar a i {
