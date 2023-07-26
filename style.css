@@ -185,9 +185,10 @@ a {
   background-color: var(--grey);
   display: grid;
   grid-template-columns: 3fr 1fr;
+  padding: 2rem 2rem 1rem 1rem;
 }
 .main .projects {
-  padding: 2rem 1rem 1rem 1rem;
+  padding-right:1.5rem;
 }
 .main .projects .cards {
   margin-top: 1rem;
@@ -224,4 +225,36 @@ a {
   align-items: center;
   justify-content: flex-end;
   font-size: 1.3rem;
+}
+
+.main .updates {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.main .updates .annoucements ul {
+  display: grid;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color:white;
+  border-radius: .5rem;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main .updates .announcement{
+  padding: 1rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.main .updates li:last-child {
+  border-bottom: none;
+}
+
+.main .updates .annoucements .title {
+  font-size: 1rem;
+}
+
+.main .updates .annoucements p{
+  font-size: .85rem;
+  color: gray;
 }
