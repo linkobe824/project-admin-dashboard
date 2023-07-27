@@ -20,8 +20,7 @@ a {
 }
 
 .container {
-  background-color: grey;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-auto-rows: 1fr;
@@ -230,12 +229,13 @@ a {
 .main .updates {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  gap:2rem;
 }
 
 .main .updates .annoucements ul {
   display: grid;
   margin-top: 1rem;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
   background-color:white;
   border-radius: .5rem;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
@@ -256,5 +256,36 @@ a {
 
 .main .updates .annoucements p{
   font-size: .85rem;
+  color: gray;
+}
+
+.main .trendings ul {
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: .5rem;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.main .trendings .trend-profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.main .trendings .trend-profile img {
+  height: 2.7rem;
+  width: 2.7rem;
+  background-color: var(--orange);
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.main .trendings .info p:first-child {
+  font-weight: 500;
+}
+.main .trendings .info p:last-child {
   color: gray;
 }
